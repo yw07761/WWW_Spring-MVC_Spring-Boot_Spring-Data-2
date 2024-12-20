@@ -9,11 +9,26 @@
 ## Tính năng
 
 1. Hiển thị danh sách bài viết.
-2. Tìm kiếm bài viết theo ID.
-3. Xem chi tiết bài viết.
-4. Thêm mới bài viết.
-5. Chỉnh sửa bài viết.
-6. Xóa bài viết.
+
+![image](https://github.com/user-attachments/assets/579cd818-9c64-4a5f-ba71-adc36676aad7)
+
+
+2. Xem chi tiết bài viết.
+
+![image](https://github.com/user-attachments/assets/0ad2a7c5-1760-4f3f-b83e-819657033960)
+
+   
+3. Thêm mới bài viết.
+
+![image](https://github.com/user-attachments/assets/0ee819d1-1e41-4d98-a18f-67fc02514622)
+
+
+4. Chỉnh sửa bài viết.
+
+![image](https://github.com/user-attachments/assets/3534c630-801c-42df-a739-28e46ee4995c)
+
+
+5. Xóa bài viết.
 
 ## Cơ sở dữ liệu
 
