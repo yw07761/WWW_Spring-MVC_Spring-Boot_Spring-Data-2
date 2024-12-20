@@ -30,6 +30,16 @@
 
 5. Xóa bài viết.
 
+6. Xem danh sách category
+
+![image](https://github.com/user-attachments/assets/4f61a991-79e6-4d6f-acb0-ebf2b8c4397e)
+
+
+7. Thêm Category
+
+![image](https://github.com/user-attachments/assets/b9400a2e-305e-4f6e-8ec8-2fb8df25a926)
+
+
 ## Cơ sở dữ liệu
 
 ### Bảng `Category`
