@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Categories List</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Categories List</h1>
+
+<!-- Liệt kê tất cả thể loại -->
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="category : ${categories}">
+        <td th:text="${category.name}"></td>
+        <td>
+            <a th:href="@{/categories/edit/{id}(id=${category.id})}">Edit</a> |
+            <a th:href="@{/categories/delete/{id}(id=${category.id})}"
+               onclick="return confirm('Are you sure you want to delete this category?');">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Link để tạo mới thể loại -->
+<a href="/categories/create">Create New Category</a>
+
+</body>
+</html>

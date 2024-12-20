@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Create Category</title>
+    <title>Create or Edit Category</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-<h1>Create Category</h1>
-<form th:action="@{/categories/create}" th:object="${category}" method="post">
-    <label>Name:</label>
-    <input type="text" th:field="*{name}"/>
-    <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div>
+<h1>Create or Edit Category</h1>
+<!-- Form tạo mới hoặc chỉnh sửa thể loại -->
+<form th:action="@{${category.id} != null ? '/categories/edit/' + ${category.id} : '/categories/create'}"
+      th:object="${category}" method="post">
+
+    <label for="name">Name:</label>
+    <input type="text" th:field="*{name}" id="name"/>
+
+    <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></div> <!-- Hiển thị lỗi nếu có -->
+
     <button type="submit">Save</button>
 </form>
+
+<a href="/categories">Back to List</a> <!-- Link quay lại trang danh sách -->
 </body>
 </html>
